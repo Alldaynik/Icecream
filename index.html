@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>🍦Ice Cream Shop🍦</title>
+  </head>
+  <body>
+    <header class="container-fluid">
+      <div class="row">
+        <div class="col-6">
+          <img
+            class="img-fluid sign"
+            src="/ice cream sign.png"
+            alt="ice cream cone"
+          />
+        </div>
+        <div class="col-6 text-align-center">
+          <p>My IceCream Shop</p>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <div class="row">
+        <div class="col-9 icecream-overflow">
+          <!-- NOTE this is the row that all of the products are on. need to go back and make cards smaller and make the content on the page look better -->
+          <div class="pt-2"><h3>Toppings</h3></div>
+          <div class="row mt-3" id="topping-items">
+            <!-- NOTE this was put in the JavaSCript for each of the different elements -->
+            <!-- <div class="col-md-6 p-2">
+              <div class="bg-dark rounded-top shadow text-light">
+                <img
+                  class="w-100 rounded-top object-cover"
+                  height="300px"
+                  src="/ice cream cone.jpg"
+                  alt=""
+                />
+                <div class="d-flex justify-content-between">
+                  <h4>this is my ice cream</h4>
+                  <h4>$3</h4>
+                </div>
+              </div>
+            </div> -->
+          </div>
+          <div class="pt-2"><h3>Vessels</h3></div>
+          <div class="row mt-3" id="vessel-items"></div>
+          <div class="pt-2"><h3>Ice Cream Flavors</h3></div>
+          <div class="row m-3" id="iceCream-items"></div>
+        </div>
+        <div class="col-3 cartHeight p-3 border border-dark">
+          <div>
+            <h4 class="border-bottom border-dark">Orders</h4>
+            <div class="row mt-3" id="order-items">
+              <div class=" col-12 d-flex bg-dark text-light justify-content-between p-3">
+                <div>
+                  <p>Total: $<span class="me-4" id="total">0</span></p>
+                  <span class="me-4" id="total">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="container-fluid bg-dark text-light">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <p>WE MADE IT</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="app.js"></script>
+</html>

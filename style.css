@@ -1,0 +1,34 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.object-cover {
+  object-fit: cover;
+}
+.sign {
+  max-height: 100px;
+}
+
+.icecream-overflow {
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+.cartHeight {
+  max-height: 100vh;
+}
+
+.action {
+  cursor: pointer;
+  transition: all 0.25 ease-out;
+}
+
+.action:hover {
+  transform: scale(1.02);
+}
